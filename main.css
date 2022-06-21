@@ -1,7 +1,8 @@
 /* Estilização dos fundos não definidos */
 
 body{    
-    background-image: linear-gradient(to left bottom, #c46400, #9d4121, #6c2825, #39181c, #000000);
+    background-color: rgb(40, 40, 40);
+    /* background-image: linear-gradient(to left bottom, #c46400, #9d4121, #6c2825, #39181c, #000000); */
     color: white;    
     min-width: 915px;
 }
@@ -17,6 +18,8 @@ header p{
 
 /* Estilização para o Curriculo */
 
+/* Iniciando pelos Fieldset */
+
 fieldset{
     margin-right: 15%;
     margin-left: 15%;
@@ -31,6 +34,15 @@ fieldset legend{
 fieldset.exp{
     margin-bottom: 05px;
 }
+
+fieldset p{
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+/* FIM FIELDSET */
+
+/* Iniciando estilização pelas Class */
 
 .infInicio{
     display: flex;
@@ -54,6 +66,7 @@ form label{
 form input{
     display: inline;
     width: 150px;
+    height: 15px;
     text-align: center;
     color: white;
     background: none;
@@ -63,21 +76,81 @@ form input{
     border-color: white;
 }
 
+/* Para o textarea utilizar o Jquery para ajuste automatico */
 
+    form textarea{
+        margin-left: 8%;
+    }
+
+.infSexo {
+    display: inline;
+}
+
+.infSexo input{
+    width: 20px;
+    margin-left: 8%;
+}
+
+.infSexo label{
+    margin-left: 5px;
+}
+
+.infSexo p{
+    font-weight: bold;
+    /* text-align: center; */
+    margin-left: 8%;
+}
+
+.infCivil {
+    display: inline;
+}
+
+.infCivil input{
+    position: center;
+    width: 20px;
+    margin-left: 8%;
+}
+
+.infCivil label{
+    margin-left: 5px;
+}
+
+.infCivil p{
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+.end{
+    display: flex;
+}
+
+.end input{
+    width: 60%;
+    margin-right: 8%;
+}
+
+.endComp{
+    display: flex;
+}
+
+.endComp input{
+    width: 60%;
+    margin-right: 8%;
+}
 
 /* Estilização dos botoções */
 
 .add{
     position: absolute;
-    top: 85%;
+    top: 135%;
     left: 76%;   
 }
 
-.addE{
+/* .addE{
     position: absolute;
-    top: 118%;
+    top: 168%;
     left: 76%;   
-}
+} */
 
 .fim{
     position: absolute;

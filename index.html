@@ -20,6 +20,7 @@
             <div class="inf">
                 
                 <!-- Informações obrigatorias -->
+                <br><br>
                 <div class="infInicio">
                     <label id="nome">Nome:</label>
                     <input type="text" id="name" name="nome" placeholder="Seu nome">            
@@ -33,8 +34,6 @@
                 <label id="nat">Naturalidade:</label>
                 <input type="text" id="nat" name="nat" placeholder="Ex: Brasileiro">    
                 <br><br>
-                <label id="email">E-mail: </label>
-                <input type="email" id="email" name="emai" placeholder="exemplo@exemplo.com">
                 <div class="infSexo">
                     <p>Genero:</p>
                     <input type="radio" id="sexo" name="sexo" value="masculino">
@@ -43,7 +42,8 @@
                     <label id="sexo" for="fem">Feminino.</label>
                     <input type="radio" id="sexo" name="sexo" value="outros">
                     <label id="sexo" for="out">Prefiro não responder.</label>
-                </div>                
+                </div>  
+                <br><br>              
                 <div class="infCivil">
                     <p>Estado Civil:</p>
                     <input type="radio" id="civil" name="civil" value="solt">
@@ -54,19 +54,26 @@
                     <label id="sexo" for="uniao">União Estavel</label>
                 </div>
 
-                <br>
+                <br><br>
 
                 <!-- Informações adicionais -->
 
-                <label id="endereco">Endereço:</label>
-                <input type="text" id="endereco" name="endereco" placeholder="Seu endereço">
-                <br><br>
-                <label id="enderecoNum">Numero:</label>
-                <input type="text" id="enderecoNum" name="enderecoComp" placeholder="Nº de sua residencia">
-                <br><br>
-                <label id="enderecoComp">Complemento:</label>
-                <input type="text" id="enderecoComp" name="enderecoComp" placeholder="Complemento">
-                <br><br>
+                <br>
+
+                <div class="end">
+                    <label id="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Seu endereço" style="margin-right: 2%;">
+                    <label id="enderecoNum" style="margin-left: 7px;">Numero:</label>
+                    <input type="text" id="enderecoNum" name="enderecoComp" placeholder="Nº" style="width: 51px;">
+                </div>
+                <br>
+                <div class="endComp">
+                    <label id="enderecoComp">Complemento:</label>
+                    <input type="text" id="enderecoComp" name="enderecoComp" placeholder="Complemento">
+                    <label id="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="Ex: 12345-678" style="width: 100px;">
+                </div>
+                <br>
                 <label id="cidade">Cidade:</label>
                 <input type="text" id="cidade" name="cidade" placeholder="Sua cidade">
                 <label id="uf">Estado: </label>
@@ -95,12 +102,20 @@
                         <option value="to">TO</option>
                         <option value="df">DF</option>                        
                     </select>
+                <br><br>                
                 <label id="phone">Telenofe: </label>
                 <input type="tel" id="phone" name="phone" pattern="[0-11]{2} [0-11]{5}-[0-11]{4}" placeholder="Ex: (00) 12345-6789">            
+                <br><br>
+                <label id="email">E-mail: </label>
+                <input type="email" id="email" name="emai" placeholder="exemplo@exemplo.com" style="width: 40%;">
+                <br><br>
                 <label id="linkedin">Linkedin</label>
-                <input type="url" id="linkedin" name="linkedin" placeholder="Link do seu perfil.">
+                <input type="url" id="linkedin" name="linkedin" placeholder="Link do seu perfil." style="width: 40%;">
+                <br><br>
                 <label id="obj">Objetivo: </label>
+                <br><br>
                 <textarea id="obj" name="obj" rows="4" cols="60" placeholder="Informe seu objetivo..."></textarea>
+                <br><br>
             </div>
         </fieldset>
 
@@ -108,12 +123,15 @@
 
         <fieldset class="formacao">
 
-            <legend>Formações</legend>            
+            <legend>Formações</legend>      
+            
+            <br><br>
             
             <label id="curso">Curso:</label>
             <input type="text" id="curso" name="curso" placeholder="Curso">
             <label id="inst">Instituição:</label>
             <input type="text" id="inst" name="inst" placeholder="Instituição de formação">
+            <br><br>
             <p>Tipo de curso:</p>
                 <input type="radio" id="tpCurso" name="tpCurso" value="bacharelado">
                 <label id="tpCurso" for="bacharelado">Bacharelado</label>
@@ -121,14 +139,15 @@
                 <label id="tpCurso" for="licenciatura">Licenciatura</label>
                 <input type="radio" id="tpCurso" name="tpCurso" value="tecnologo">
                 <label id="tpCurso" for="tecnologo">Tecnólogo</label>
+            <br><br>
             <p>Status:</p>
-                    <input type="radio" id="status" name="status" value="concluido">
-                    <label id="status" for="concluido">Concluído</label>
-                    <input type="radio" id="status" name="status" value="cursando">
-                    <label id="status" for="cursando">Cursando</label>
-                    <input type="radio" id="status" name="status" value="paralisado">
-                    <label id="status" for="paralisada">Paralisada</label>                    
-
+                <input type="radio" id="status" name="status" value="concluido">
+                <label id="status" for="concluido">Concluído</label>
+                <input type="radio" id="status" name="status" value="cursando">
+                <label id="status" for="cursando">Cursando</label>
+                <input type="radio" id="status" name="status" value="paralisado">
+                <label id="status" for="paralisada">Paralisada</label>                    
+            <br><br>
             <div id="boxForm"> 
 
 
