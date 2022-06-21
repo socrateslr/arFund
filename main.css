@@ -1,0 +1,96 @@
+/* Estilização dos fundos não definidos */
+
+body{    
+    background-image: linear-gradient(to left bottom, #c46400, #9d4121, #6c2825, #39181c, #000000);
+    color: white;    
+    min-width: 915px;
+}
+
+header{
+    text-align: center;
+    font-weight: bold;
+}
+
+header p{
+    font-size: 20px;
+}
+
+/* Estilização para o Curriculo */
+
+fieldset{
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    display: flexbox;
+}
+
+fieldset legend{
+    font-weight: bold;
+}
+
+fieldset.exp{
+    margin-bottom: 05px;
+}
+
+.infInicio{
+    display: flex;
+}
+
+.infInicio label{
+    margin-left: 8%;
+    margin-right: 5px;      
+}
+
+.infInicio input{
+    width: 40%;
+    margin-right: 8%;
+}
+
+form label{
+    margin-left: 8%;
+    margin-right: 5px;
+}
+
+form input{
+    display: inline;
+    width: 150px;
+    text-align: center;
+    color: white;
+    background: none;
+    border-top: none;   
+    border-right: none;
+    border-left: none;
+    border-color: white;
+}
+
+
+
+/* Estilização dos botoções */
+
+.add{
+    position: absolute;
+    top: 85%;
+    left: 76%;   
+}
+
+.addE{
+    position: absolute;
+    top: 118%;
+    left: 76%;   
+}
+
+.fim{
+    position: absolute;
+    margin: 05px;
+    left: 48%;   
+}
+
+
+
+
+
+
+
+
+
+
