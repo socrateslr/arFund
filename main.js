@@ -13,10 +13,23 @@ btn_add.addEventListener('click', function(){
 })
 
 function createLineFo(){
-    
+
+
+    // BorderTop para divisão de cada adição
+
+    {
+        var animacaoForm = document.createElement('div');
+        animacaoForm.setAttribute('id', 'animacao');
+        animacaoForm.style.borderTop = 'solid 2px';
+        animacaoForm.style.marginTop ='15px';
+        animacaoForm.style.marginBottom ='15px';
+
+        boxForm.appendChild(animacaoForm);
+    }
+
     // Criação do campo curso
 
-    var elemento = document.createElement('label');
+    {var elemento = document.createElement('label');
     elemento.setAttribute('id', 'curso1');
     elemento.textContent = 'Curso:';
 
@@ -30,6 +43,17 @@ function createLineFo(){
     
         boxForm.appendChild(elemento);
     }
+
+    {var elemento = document.createElement('br');
+
+    boxForm.appendChild(elemento);{
+        var elemento = document.createElement('br');
+
+        boxForm.appendChild(elemento);
+    }
+    }
+
+    }
     
     // criação do campo instituição
     
@@ -37,7 +61,7 @@ function createLineFo(){
         var elemento = document.createElement('label');
         elemento.setAttribute('id', 'inst1');
         elemento.textContent = 'Instituição:';
-    
+            
         boxForm.appendChild(elemento);
         {
             var elemento = document.createElement('input');
@@ -49,6 +73,11 @@ function createLineFo(){
             boxForm.appendChild(elemento);
         }
     }
+
+    {var elemento = document.createElement('br');
+
+    boxForm.appendChild(elemento);
+    }    
 
     // criação do campo Tipo de curso
 
@@ -67,6 +96,8 @@ function createLineFo(){
         elemento.setAttribute('id', 'tpCurso1');
         elemento.setAttribute('name', 'tpCurso1');
         elemento.setAttribute('value', 'bacharelado');
+        elemento.style.marginLeft = '8%';
+        elemento.style.width = '20px';
         
     
         boxForm.appendChild(elemento);
@@ -75,6 +106,7 @@ function createLineFo(){
             elemento.setAttribute('id', 'tpCurso1');
             elemento.setAttribute('for', 'bacharelado');
             elemento.textContent = 'Bacharelado';
+            elemento.style.marginLeft ='5px';           
             
                         
             boxForm.appendChild(elemento);
@@ -85,6 +117,8 @@ function createLineFo(){
             elemento.setAttribute('id', 'tpCurso1');
             elemento.setAttribute('name', 'tpCurso1');
             elemento.setAttribute('value', 'licenciatura');
+            elemento.style.marginLeft = '8%';
+            elemento.style.width = '20px';
             
         
             boxForm.appendChild(elemento);
@@ -93,6 +127,7 @@ function createLineFo(){
                 elemento.setAttribute('id', 'tpCurso1');
                 elemento.setAttribute('for', 'licenciatura');
                 elemento.textContent = 'Licenciatura';
+                elemento.style.marginLeft ='5px';
                 
                             
                 boxForm.appendChild(elemento);
@@ -104,6 +139,8 @@ function createLineFo(){
             elemento.setAttribute('id', 'tpCurso1');
             elemento.setAttribute('name', 'tpCurso1');
             elemento.setAttribute('value', 'tecnologo');
+            elemento.style.marginLeft = '8%';
+            elemento.style.width = '20px';
             
         
             boxForm.appendChild(elemento);
@@ -112,14 +149,21 @@ function createLineFo(){
                 elemento.setAttribute('id', 'tpCurso1');
                 elemento.setAttribute('for', 'tecnologo');
                 elemento.textContent = 'Tecnólogo';
+                elemento.style.marginLeft ='5px';
                 
                             
                 boxForm.appendChild(elemento);
             }
         }
     }
+    
 
     // criação do campo Tipo de curso
+
+    {var elemento = document.createElement('br');
+
+    boxForm.appendChild(elemento);
+    }
 
     {
         var elemento = document.createElement('p');
@@ -136,6 +180,8 @@ function createLineFo(){
         elemento.setAttribute('id', 'status1');
         elemento.setAttribute('name', 'status1');
         elemento.setAttribute('value', 'concluido');
+        elemento.style.marginLeft = '8%';
+        elemento.style.width = '20px';
         
     
         boxForm.appendChild(elemento);
@@ -144,6 +190,7 @@ function createLineFo(){
             elemento.setAttribute('id', 'status1');
             elemento.setAttribute('for', 'concluido');
             elemento.textContent = 'Concluído';
+            elemento.style.marginLeft ='5px';
             
                         
             boxForm.appendChild(elemento);
@@ -154,6 +201,8 @@ function createLineFo(){
             elemento.setAttribute('id', 'status1');
             elemento.setAttribute('name', 'status1');
             elemento.setAttribute('value', 'cursando');
+            elemento.style.marginLeft = '8%';
+            elemento.style.width = '20px';
             
         
             boxForm.appendChild(elemento);
@@ -162,6 +211,7 @@ function createLineFo(){
                 elemento.setAttribute('id', 'status1');
                 elemento.setAttribute('for', 'cursando');
                 elemento.textContent = 'Cursando';
+                elemento.style.marginLeft ='5px';
                 
                             
                 boxForm.appendChild(elemento);
@@ -173,6 +223,8 @@ function createLineFo(){
             elemento.setAttribute('id', 'status1');
             elemento.setAttribute('name', 'status1');
             elemento.setAttribute('value', 'paralisado');
+            elemento.style.marginLeft = '8%';
+            elemento.style.width = '20px';
             
         
             boxForm.appendChild(elemento);
@@ -181,6 +233,7 @@ function createLineFo(){
                 elemento.setAttribute('id', 'status1');
                 elemento.setAttribute('for', 'paralisado');
                 elemento.textContent = 'Paralisado';
+                elemento.style.marginLeft ='5px';
                 
                             
                 boxForm.appendChild(elemento);
@@ -196,6 +249,19 @@ btn_addE.addEventListener('click', function(){
 })
 
 function createLineEx(){
+
+
+    // BorderTop para divisão de cada adição
+
+    {
+        var animacaoExp = document.createElement('div');
+        animacaoExp.setAttribute('id', 'animacao');
+        animacaoExp.style.borderTop = 'solid 2px';
+        animacaoExp.style.marginTop ='15px';
+        animacaoExp.style.marginBottom ='15px';
+
+        boxExp.appendChild(animacaoExp);
+    }
     
     // Criação do campo Data Inicio
     
@@ -208,8 +274,18 @@ function createLineEx(){
         elemento.setAttribute('type', 'date');
         elemento.setAttribute('id', 'dtIni1');
         elemento.setAttribute('name', 'dtIni1');
+        elemento.style.width = '100px';
 
         boxExp.appendChild(elemento);
+    }
+
+    {var elemento = document.createElement('br');
+
+    boxExp.appendChild(elemento);{
+        var elemento = document.createElement('br');
+
+        boxExp.appendChild(elemento);
+    }
     }
 
     // Criação do campo Data Fim
@@ -224,9 +300,19 @@ function createLineEx(){
             elemento.setAttribute('type', 'date');
             elemento.setAttribute('id', 'dtFim1');
             elemento.setAttribute('name', 'dtFim1');
+            elemento.style.width = '100px';
 
             boxExp.appendChild(elemento);
         }
+    }
+
+    {var elemento = document.createElement('br');
+
+    boxExp.appendChild(elemento);{
+        var elemento = document.createElement('br');
+
+        boxExp.appendChild(elemento);
+    }
     }
     
     // Criação do campo Até o momento
@@ -236,14 +322,26 @@ function createLineEx(){
         elemento.setAttribute('type', 'checkbox');
         elemento.setAttribute('id', 'ateMomento');
         elemento.setAttribute('name', 'ateMomento');
+        elemento.style.marginLeft = '8%';
+        elemento.style.width = '15px';
 
         boxExp.appendChild(elemento);{
             var elemento = document.createElement('label');
             elemento.setAttribute('id', 'ateMomento');
             elemento.textContent = 'Até o momento.';
+            elemento.style.margin = '5px';
             
             boxExp.appendChild(elemento);
         }
+    }
+
+    {var elemento = document.createElement('br');
+
+    boxExp.appendChild(elemento);{
+        var elemento = document.createElement('br');
+
+        boxExp.appendChild(elemento);
+    }
     }
 
     // Criação do campo Empresa
@@ -264,6 +362,15 @@ function createLineEx(){
         }
     }
 
+    {var elemento = document.createElement('br');
+
+    boxExp.appendChild(elemento);{
+        var elemento = document.createElement('br');
+
+        boxExp.appendChild(elemento);
+    }
+    }
+
     // Criação do campo Função
 
     {
@@ -277,8 +384,33 @@ function createLineEx(){
             elemento.setAttribute('id', 'func1');
             elemento.setAttribute('name', 'func1');
             elemento.setAttribute('placeholder', 'Ex: Aux. Administrativo');
+            
 
             boxExp.appendChild(elemento);
         }
     }
+    
+    {var elemento = document.createElement('br');
+
+    boxExp.appendChild(elemento);{
+        var elemento = document.createElement('br');
+
+        boxExp.appendChild(elemento);
+    }
+    }
 }
+
+
+// Jquery textarea
+
+$('#textObj').on('input', function(){
+    this.style.height = 'auto';
+
+    this.style.height = 
+            (this.scrollHeight) + 'px';
+});
+
+$('textarea').resizable();
+
+
+

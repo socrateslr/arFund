@@ -10,13 +10,20 @@
     <header>
         <h1>Curriculo Online</h1>
         <p>Preencha os campos e ao final será gerado o curriculo!</p>
+        
+        <!-- projeto para amanhã, ao clicar nos icones levar a parte da pagina -->
+        
+        <a href="#"><i class="fa-solid fa-address-card" style="color: white;"></i>Dados Pessoais</a>
+        <a href="#"><i class="fa-solid fa-graduation-cap" style="color: white;"></i>Formação</a>
+        <a href="#"><i class="fa-solid fas fa-briefcase" style="color: white;"></i>Experiencias</a>
+
     </header>
 
     <legend style="text-align: center;"><b>CURRICULO</b></legend>
 
     <form class="boxCV" id="form1">
         <fieldset class="dadosPes">
-            <legend>Dados pessoais</legend>
+            <legend><i class="fa-solid fa-address-card" style="color: white;"></i>Dados pessoais</legend>
             <div class="inf">
                 
                 <!-- Informações obrigatorias -->
@@ -110,11 +117,11 @@
                 <input type="email" id="email" name="emai" placeholder="exemplo@exemplo.com" style="width: 40%;">
                 <br><br>
                 <label id="linkedin">Linkedin</label>
-                <input type="url" id="linkedin" name="linkedin" placeholder="Link do seu perfil." style="width: 40%;">
+                <input type="url" id="linkedin" name="linkedin" placeholder="Link do seu perfil." style="width: 60%;">
                 <br><br>
                 <label id="obj">Objetivo: </label>
-                <br><br>
-                <textarea id="obj" name="obj" rows="4" cols="60" placeholder="Informe seu objetivo..."></textarea>
+                <br>
+                <textarea id="textObj" name="textObj" rows="1" cols="67" placeholder="Informe seu objetivo..."></textarea>
                 <br><br>
             </div>
         </fieldset>
@@ -123,15 +130,15 @@
 
         <fieldset class="formacao">
 
-            <legend>Formações</legend>      
+            <legend><i class="fa-solid fa-graduation-cap" style="color: white;"></i>Formações</legend>      
             
-            <br><br>
-            
+            <br>
             <label id="curso">Curso:</label>
             <input type="text" id="curso" name="curso" placeholder="Curso">
+            <br><br>            
             <label id="inst">Instituição:</label>
             <input type="text" id="inst" name="inst" placeholder="Instituição de formação">
-            <br><br>
+            <br>
             <p>Tipo de curso:</p>
                 <input type="radio" id="tpCurso" name="tpCurso" value="bacharelado">
                 <label id="tpCurso" for="bacharelado">Bacharelado</label>
@@ -139,15 +146,15 @@
                 <label id="tpCurso" for="licenciatura">Licenciatura</label>
                 <input type="radio" id="tpCurso" name="tpCurso" value="tecnologo">
                 <label id="tpCurso" for="tecnologo">Tecnólogo</label>
-            <br><br>
+            <br>
             <p>Status:</p>
                 <input type="radio" id="status" name="status" value="concluido">
                 <label id="status" for="concluido">Concluído</label>
                 <input type="radio" id="status" name="status" value="cursando">
                 <label id="status" for="cursando">Cursando</label>
                 <input type="radio" id="status" name="status" value="paralisado">
-                <label id="status" for="paralisada">Paralisada</label>                    
-            <br><br>
+                <label id="status" for="paralisada">Paralisada</label>
+            <br>               
             <div id="boxForm"> 
 
 
@@ -160,18 +167,23 @@
 
         <fieldset class="exp">
 
-            <legend>Experiencias Profissionais</legend> 
+            <legend><i class="fa-solid fas fa-briefcase" style="color: white;"></i>Experiencias Profissionais</legend> 
             
             <label id="dtIni">Data Inicio:</label>
             <input type="date" id="dtIni" name="dtIni">
+            <br><br>            
             <label id="dtFim">Data Fim:</label>
             <input type="date" id="dtFim" name="dtFim">
+            <br><br>            
             <input type="checkbox" id="ateMomento" name="ateMomento">
             <label id="ateMomento">Até o momento.</label>
+            <br><br>
             <label id="empresa">Empresa:</label>
             <input type="text" id="empresa" name="empresa" placeholder="Ex: Empresa LTDA">
+            <br><br>
             <label id="func">Função:</label>
             <input type="text" id="func" name="func" placeholder="Ex: Aux. Administrativo">
+            <br><br>
             
             <div id="boxExp">
 
@@ -186,6 +198,8 @@
     <button id="addE" class="addE">+ Experiencias</button> 
     <button id="fim" class="fim">Concluir</button>
     
+    <script src="https://kit.fontawesome.com/3cbd020426.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src='main.js'></script>
 </body>
 </html>
