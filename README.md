@@ -6,6 +6,7 @@ Atividade Reflexiva - Fundamento
   2. php.php - Leitura dos dados captados e transformação em PHP para geração da pagina de conferencia e impressão.
   3. style - CSS da pagina principal e da impressão para conferencia.
   4. scritp - JS e JQuery funções para os botões:
+
           - inserir (bem como labels e inputs que serão adicionados ao clicar);
           
           - remover (bem como div que será removida);
