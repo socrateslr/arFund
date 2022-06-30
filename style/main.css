@@ -1,0 +1,300 @@
+/* Estilização das tags HTML */
+
+body{    
+    background-color: rgb(40, 40, 40);
+    color: white;    
+    min-width: 915px;
+    max-width: 915px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+header p{
+    font-size: 20px;
+}
+
+header a{
+    color: white;
+}
+
+form label{
+    margin-left: 8%;
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+form input{
+    display: inline;
+    width: 150px;
+    height: 15px;
+    text-align: center;
+    color: white;
+    background: none;
+    border-top: none;   
+    border-right: none;
+    border-left: none;
+    border-color: white;
+    outline: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    height: 15px;
+    outline: 0;
+}
+
+form textarea{
+    border-radius: 8px;
+    border-bottom: 2px;
+    border-color: white;
+    margin-top: 07px;
+    margin-left: 8%;
+    margin-right: 8%;
+    outline: none;
+    resize: none;
+} /* no textArea foi utiliza jQuery para ajustar o tamanho automaticamente */
+
+i{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* CSS para o formulario - Iniciando pelos Fieldset */
+
+fieldset{
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    display: flexbox;
+}
+
+fieldset legend{
+    font-weight: bold;
+}
+
+fieldset.exp{
+    margin-bottom: 05px;
+}
+
+fieldset p{
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+
+/* FIM FIELDSET */
+
+/* Iniciando estilização pelas Class */
+
+.infInicio{
+    display: flex;
+}
+
+.infInicio label{
+    margin-left: 8%;
+    margin-right: 5px;      
+}
+
+.infInicio input{
+    width: 40%;
+    margin-right: 8%;
+}
+
+.infSexo {
+    display: inline;
+}
+
+.infSexo input{
+    width: 20px;
+    margin-left: 8%;
+}
+
+.infSexo label{
+    margin-left: 5px;
+}
+
+.infSexo p{
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+.infCivil {
+    display: inline;
+}
+
+.infCivil input{
+    position: center;
+    width: 20px;
+    margin-left: 8%;
+}
+
+.infCivil label{
+    margin-left: 5px;
+}
+
+.infCivil p{
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+.end{
+    display: flex;
+}
+
+.end input{
+    width: 60%;
+    margin-right: 8%;
+}
+
+.endComp{
+    display: flex;
+}
+
+.endComp input{
+    width: 60%;
+    margin-right: 8%;
+}
+
+
+
+/* Estilização dos botões */
+
+input#removeForm{
+    float: right;
+    font-size: 18px;
+    width: 25px;   
+    height: 25px;
+    border-radius: 150px;
+    margin-left: 5px;
+    background-color: rgb(219, 111, 111);
+    border-color: rgb(219, 111, 111);
+    color: white;
+    transition: 0.3s;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+input#removeForm:hover{
+    opacity: 1;
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+input#add{
+    float: right;
+    font-size: 20px;
+    width: 25px;   
+    height: 25px;
+    border-radius: 150px;
+    background-color: rgb(84, 223, 107);
+    border-color: rgb(84, 223, 107);
+    color: white;
+    transition: 0.3s;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+input#add:hover{
+    opacity: 1;
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+input#removeExp{
+    float: right;
+    font-size: 18px;
+    width: 25px;   
+    height: 25px;
+    border-radius: 150px;
+    margin-left: 5px;
+    background-color: rgb(219, 111, 111);
+    border-color: rgb(219, 111, 111);
+    color: white;
+    transition: 0.3s;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+input#removeExp:hover{
+    opacity: 1;
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+input#addE{
+    float: right;
+    background-color: rgb(150, 150, 150, 150);
+    font-size: 20px;
+    width: 25px;   
+    height: 25px;
+    border-radius: 150px;
+    border: none;
+    box-shadow: none;
+    background-color: rgb(84, 223, 107);
+    border-color: rgb(84, 223, 107);
+    color: white;
+    transition: 0.3s;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+input#addE:hover{
+    opacity: 1;
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+button{
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 22%;
+    margin-right: 15%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 10px 14px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #2196F3;  
+    border-color: #2196F3;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 1;
+    background-color: white;
+    border-color: #2196F3;
+    color: #2196F3;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    min-width: 873px;
+    max-width: 941px;
+    margin: 0 auto;
+}
+
+/* CSS do cabecalio */
+
+.cabecalio .box{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    background-color: #2196F3;
+    height: 0 auto;
+    color: whitesmoke;
+    margin: 0 auto;
+}
+
+.cabecalio .box .nome{    
+    text-align: left;
+    margin: 0 auto;
+}
+
+.cabecalio .box .nome h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.cabecalio .box .nome p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+
+.cabecalio .box .info{    
+    text-align: right;
+}
+
+.cabecalio .box .info p{
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: -0px;
+    margin-right: 2.5%;
+}
+
+.cabecalio .box .info span#uf{
+    text-transform: uppercase;
+}
+
+/* CSS para o CORPO do curriculo */
+
+.dadosIncluidos{
+    margin-left: 10%;
+}
+
+h3{
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-top: 45px;
+}
+
+.obj p{
+    padding-left: 25px;
+}
+
+.dadosIncluidos .lista-formacao{
+    list-style: none;
+}
+
+.dadosIncluidos .lista-formacao p{
+    font-weight: bold;
+}
+
+.dadosIncluidos span{
+    font-weight: bold;
+}
+
+.formList{
+    border-bottom: 2px solid;  
+    padding-left: 10px;
+    width: 200px;
+}
+
+.dadosIncluidos .lista-formacao .formList p#tpCurso{
+    text-transform: capitalize;
+}
+
+.dadosIncluidos .lista-formacao .formList p#status{
+    text-transform: capitalize;
+}
+
+.dadosIncluidos .lista-experiencia{
+    list-style: none;
+}
+
+.expList{
+    border-bottom: 2px solid;
+    padding-left: 10px;
+    width: 200px;
+}
+
+@page{
+    margin: 0%;
+}
+
+
+
+
+
+
+

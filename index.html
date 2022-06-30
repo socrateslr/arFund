@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <title>Curriculo | RA</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>    
+    <link rel='stylesheet' type='text/css' media='screen' href="style/main.css">    
 </head>
 <body>
     <header>
@@ -13,78 +13,75 @@
         
         <!-- projeto para amanhã, ao clicar nos icones levar a parte da pagina -->
         
-        <a href="#"><i class="fa-solid fa-address-card" style="color: white;"></i>Dados Pessoais</a>
-        <a href="#"><i class="fa-solid fa-graduation-cap" style="color: white;"></i>Formação</a>
-        <a href="#"><i class="fa-solid fas fa-briefcase" style="color: white;"></i>Experiencias</a>
+        <a href="#dadosPE"><i class="fa-solid fa-address-card" style="color: white;"></i>Dados Pessoais</a>
+        <a href="#forma"><i class="fa-solid fa-graduation-cap" style="color: white;"></i>Formação</a>
+        <a href="#expe"><i class="fa-solid fas fa-briefcase" style="color: white;"></i>Experiencias</a>
 
     </header>
 
     <legend style="text-align: center;"><b>CURRICULO</b></legend>
-
-    <form class="boxCV" id="form1">
+    <form class="boxCV" id="form1" action="php.php" method="post" target="_blank" enctype="multipart/form-data">
         <fieldset class="dadosPes">
-            <legend><i class="fa-solid fa-address-card" style="color: white;"></i>Dados pessoais</legend>
+            <legend id="dadosPe"><i class="fa-solid fa-address-card" style="color: white;"></i>Dados pessoais</legend>
             <div class="inf">
                 
                 <!-- Informações obrigatorias -->
                 <br><br>
                 <div class="infInicio">
                     <label id="nome">Nome:</label>
-                    <input type="text" id="name" name="nome" placeholder="Seu nome">            
+                    <input type="text" id="name" name="nome" placeholder="Seu nome" required>            
                     <label id="sobreNome">Sobrenome:</label>
-                    <input type="text" id="sobreNome" name="sobreNome" placeholder="Seu Sobrenome">
+                    <input type="text" id="sobreNome" name="sobreNome" placeholder="Seu Sobrenome" required>
                 </div>
                 <br>
-                <label id="dtNasc" class="dtNasc">Data de Nasc: </label>
-                <input type="date" id="dtNasc" name="dtNasc">               
+                <label id="idade" class="idade">Idade: </label>
+                <input type="number" id="idade" name="idade" style="width: 50px;" required>
                 <br><br>
                 <label id="nat">Naturalidade:</label>
-                <input type="text" id="nat" name="nat" placeholder="Ex: Brasileiro">    
+                <input type="text" id="nat" name="nat" placeholder="Ex: Brasileiro" required>    
                 <br><br>
                 <div class="infSexo">
                     <p>Genero:</p>
-                    <input type="radio" id="sexo" name="sexo" value="masculino">
+                    <input type="radio" id="sexo" name="sexo" value="Masculino" required>
                     <label id="sexo" for="masc">Masculino.</label>
-                    <input type="radio" id="sexo" name="sexo" value="feminino">
+                    <input type="radio" id="sexo" name="sexo" value="Feminino" required>
                     <label id="sexo" for="fem">Feminino.</label>
-                    <input type="radio" id="sexo" name="sexo" value="outros">
-                    <label id="sexo" for="out">Prefiro não responder.</label>
+                    <input type="radio" id="sexo" name="sexo" value="Outros" required>
+                    <label id="sexo" for="out">Outros.</label>
                 </div>  
                 <br><br>              
                 <div class="infCivil">
                     <p>Estado Civil:</p>
-                    <input type="radio" id="civil" name="civil" value="solt">
-                    <label id="sexo" for="solt">Solteiro(A)</label>
-                    <input type="radio" id="civil" name="civil" value="casad">
-                    <label id="sexo" for="cas">Casado(A)</label>
-                    <input type="radio" id="civil" name="civil" value="uniao">
-                    <label id="sexo" for="uniao">União Estavel</label>
+                    <input type="radio" id="civil" name="civil" value="Solteiro(a)" required>
+                    <label id="civil" for="solt">Solteiro(A)</label>
+                    <input type="radio" id="civil" name="civil" value="Casado(a)" required>
+                    <label id="civil" for="cas">Casado(A)</label>
+                    <input type="radio" id="civil" name="civil" value="União Estavel" required>
+                    <label id="civil" for="uniao">União Estavel</label>
                 </div>
-
                 <br><br>
 
                 <!-- Informações adicionais -->
 
                 <br>
-
                 <div class="end">
                     <label id="endereco">Endereço:</label>
-                    <input type="text" id="endereco" name="endereco" placeholder="Seu endereço" style="margin-right: 2%;">
+                    <input type="text" id="endereco" name="endereco" placeholder="Seu endereço" style="margin-right: 2%;" required>
                     <label id="enderecoNum" style="margin-left: 7px;">Numero:</label>
-                    <input type="text" id="enderecoNum" name="enderecoComp" placeholder="Nº" style="width: 51px;">
+                    <input type="text" id="enderecoNum" name="enderecoNum" placeholder="Nº" style="width: 51px;" required>
                 </div>
                 <br>
                 <div class="endComp">
                     <label id="enderecoComp">Complemento:</label>
                     <input type="text" id="enderecoComp" name="enderecoComp" placeholder="Complemento">
                     <label id="cep">CEP:</label>
-                    <input type="text" id="cep" name="cep" placeholder="Ex: 12345-678" style="width: 100px;">
+                    <input type="text" id="cep" name="cep" placeholder="Ex: 12345-678" style="width: 100px;" required>
                 </div>
                 <br>
                 <label id="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade" placeholder="Sua cidade">
-                <label id="uf">Estado: </label>
-                    <select id="uf">
+                <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required>
+                <label name="uf" id="uf">Estado: </label>
+                    <select name="uf" id="uf">
                         <option value="ac">AC</option>
                         <option value="al">AL</option>
                         <option value="ap">AP</option>
@@ -111,95 +108,59 @@
                     </select>
                 <br><br>                
                 <label id="phone">Telenofe: </label>
-                <input type="tel" id="phone" name="phone" pattern="[0-11]{2} [0-11]{5}-[0-11]{4}" placeholder="Ex: (00) 12345-6789">            
+                <input type="tel" id="phone" name="phone" placeholder="Ex: (00) 12345-6789" required>            
                 <br><br>
                 <label id="email">E-mail: </label>
-                <input type="email" id="email" name="emai" placeholder="exemplo@exemplo.com" style="width: 40%;">
+                <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" style="width: 40%;" required>
                 <br><br>
                 <label id="linkedin">Linkedin</label>
-                <input type="url" id="linkedin" name="linkedin" placeholder="Link do seu perfil." style="width: 60%;">
+                <input type="text" id="linkedin" name="linkedin" placeholder="Nome do seu usuario (opcional). " style="width: 60%;">
                 <br><br>
                 <label id="obj">Objetivo: </label>
                 <br>
-                <textarea id="textObj" name="textObj" rows="1" cols="67" placeholder="Informe seu objetivo..."></textarea>
+                <textarea id="textObj" name="textObj" rows="1" cols="67" placeholder="Informe seu objetivo... (opcional)"></textarea>
                 <br><br>
             </div>
         </fieldset>
 
         <!-- Informações da formação -->
+        
 
         <fieldset class="formacao">
 
-            <legend><i class="fa-solid fa-graduation-cap" style="color: white;"></i>Formações</legend>      
+            <input type="button" id="removeForm" class="removeForm" name="removeForm" value="-">
+            <input type="button" id="add" class="add" name="add" value="+">
             
-            <br>
-            <label id="curso">Curso:</label>
-            <input type="text" id="curso" name="curso" placeholder="Curso">
-            <br><br>            
-            <label id="inst">Instituição:</label>
-            <input type="text" id="inst" name="inst" placeholder="Instituição de formação">
-            <br>
-            <p>Tipo de curso:</p>
-                <input type="radio" id="tpCurso" name="tpCurso" value="bacharelado">
-                <label id="tpCurso" for="bacharelado">Bacharelado</label>
-                <input type="radio" id="tpCurso" name="tpCurso" value="licenciatura">
-                <label id="tpCurso" for="licenciatura">Licenciatura</label>
-                <input type="radio" id="tpCurso" name="tpCurso" value="tecnologo">
-                <label id="tpCurso" for="tecnologo">Tecnólogo</label>
-            <br>
-            <p>Status:</p>
-                <input type="radio" id="status" name="status" value="concluido">
-                <label id="status" for="concluido">Concluído</label>
-                <input type="radio" id="status" name="status" value="cursando">
-                <label id="status" for="cursando">Cursando</label>
-                <input type="radio" id="status" name="status" value="paralisado">
-                <label id="status" for="paralisada">Paralisada</label>
-            <br>               
-            <div id="boxForm"> 
+
+            <legend id="forma"><i class="fa-solid fa-graduation-cap" style="color: white;"></i>Formações</legend>      
+                <div id="boxForm"> 
 
 
-
-            </div>
-
+                </div>
         </fieldset>
         
         <!-- Informações sobre experiencias -->
 
         <fieldset class="exp">
 
-            <legend><i class="fa-solid fas fa-briefcase" style="color: white;"></i>Experiencias Profissionais</legend> 
-            
-            <label id="dtIni">Data Inicio:</label>
-            <input type="date" id="dtIni" name="dtIni">
-            <br><br>            
-            <label id="dtFim">Data Fim:</label>
-            <input type="date" id="dtFim" name="dtFim">
-            <br><br>            
-            <input type="checkbox" id="ateMomento" name="ateMomento">
-            <label id="ateMomento">Até o momento.</label>
-            <br><br>
-            <label id="empresa">Empresa:</label>
-            <input type="text" id="empresa" name="empresa" placeholder="Ex: Empresa LTDA">
-            <br><br>
-            <label id="func">Função:</label>
-            <input type="text" id="func" name="func" placeholder="Ex: Aux. Administrativo">
-            <br><br>
-            
+            <input type="button" id="removeExp" class="removeExp" name="removeExp" value="-">
+            <input type="button" id="addE" class="addE" name="add" value="+">
+
+            <legend id="expe"><i class="fa-solid fas fa-briefcase" style="color: white;"></i>Experiencias Profissionais</legend>             
             <div id="boxExp">
 
                 
             </div>
-            
-            
         </fieldset>
-    </form>
 
-    <button id="add" class="add">+ Formação</button>
-    <button id="addE" class="addE">+ Experiencias</button> 
-    <button id="fim" class="fim">Concluir</button>
+        <button id="fim" class="fim" type="submit">Concluir</button>
+        <button id="limpar" onClick="history.go(0)">Limpar</button>
+    </form>   
+
+    
     
     <script src="https://kit.fontawesome.com/3cbd020426.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src='main.js'></script>
+    <script src='scritp/main.js'></script>
 </body>
 </html>
