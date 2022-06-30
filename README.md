@@ -7,8 +7,11 @@ Atividade Reflexiva - Fundamento
   3. style - CSS da pagina principal e da impressão para conferencia.
   4. scritp - JS e JQuery funções para os botões:
           - inserir (bem como labels e inputs que serão adicionados ao clicar);
+          
           - remover (bem como div que será removida);
+          
           - concluir (transformação dos dados em PHP);e
+          
           - limpar (limpeza dos inputs preenchidos).
   5. modelo - Arquivo HTML em PHP da pagina de conferencia da geração do curriculo
 
